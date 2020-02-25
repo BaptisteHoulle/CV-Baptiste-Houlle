@@ -304,5 +304,9 @@ nav .menu li a {
   header h2 span {
     color: #ff4e31;
   }
+  .content {
+    margin: 0 15% 0 15%;
+    background: grey;
+  }
 }
 /*# sourceMappingURL=main.css.map */
