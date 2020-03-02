@@ -1,46 +1,306 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <title>Responsive Navbar</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href="styles/main.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  </head>
-  <body>
-    <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <label class="logo"><img src="images/logo_sans_texte_blanc.png" alt="Logo de Baptiste Houllé représentant un R"></label>
-      <ul class="menu">
-        <li><a class="active" href="#">Présentation</a></li>
-        <li><a href="#">Compétences</a></li>
-        <li><a href="#">Expérience</a></li>
-        <li><a href="#">Formations</a></li>
-        <li><a href="#">Réalisations</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="social">
-        <li><a href="#"><img src="images/translate.png" alt="pictogramme de traduction"></a></li>
-        <li><a href="#"><i class="fab fa-behance"></i></a></li>
-        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-      </ul>
-    </nav>
-    <header>
-      <h1><strong>Baptiste Houllé</strong></h1>
-      <h2><strong>Web<span>designer</span></strong></h2>
-      <h2><strong>Intégrateur <span>web</span></strong></h2>
-    </header>
-    <section>
-      <article>
-        <div class="content"><h2>Présentation</h2></div>
-      
-      </article>
-    </section>
-  </body>
+
+<head>
+  <title>Portfolio - Baptiste Houllé</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href="styles/main.css">
+  <link rel="shortcut icon" href="images/sans texte.png" alt=""> <!-- icone sur le titre -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="script/jquery.parallax-1.1.js"></script>
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo"><img src="images/logo_sans_texte_blanc.png"
+        alt="Logo de Baptiste Houllé représentant un R"></label>
+    <ul class="menu" id="menu">
+      <li><a href="#presentation" class="active">Présentation</a></li>
+      <li><a href="#competences" >Compétences</a></li>
+      <li><a href="#experience">Expérience</a></li>
+      <li><a href="#formations">Formations</a></li>
+      <li><a href="#realisations">Réalisations</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <ul class="social">
+      <li><a href="#"><img src="images/translate.png" alt="pictogramme de traduction"></a></li>
+      <li><a target="_blank" href="https://www.behance.net/BaptisteHoulle"><i class="fab fa-behance"></i></a></li>
+      <li><a target="_blank" href="https://www.linkedin.com/in/baptiste-houll%C3%A9-87991b178/"><i
+            class="fab fa-linkedin-in"></i></a></li>
+    </ul>
+  </nav>
+  <header id="header">
+    <h1><strong>Baptiste Houllé</strong></h1>
+    <h2><strong>Web<span>designer</span></strong></h2>
+    <h2><strong>Intégrateur <span>web</span></strong></h2>
+    <a href="#presentation">
+      <div class="scroll-down"></div>
+    </a>
+  </header>
+  <section>
+    <article>
+      <div class="content" id="presentation">
+        <h2>Présentation</h2>
+        <div class="content__presentation">
+          <div class="content__presentation__illustration"><img src="images/Illustration.png"
+              alt="Portrait et illustration de Baptiste Houllé en flat design"></div>
+          <div class="content__presentation__texte">
+            <p>Je m'appelle <strong>Baptiste Houllé</strong>, j'ai <span>19 ans </span> et je suis passionné par le web
+              et le graphisme depuis quelques années ! Je suis actuellement en deuxième année de <span>DUT MMI</span>
+              (Métiers du Multimédia et de l'Internet).</p>
+            <p>Étant intéressé par le <strong>graphisme</strong> et le <strong>web</strong>, je me destine à des études
+              pour devenir <strong>Webdesigner</strong>.</p>
+            <button><img src="images/download.svg" alt=""> Télecharger mon CV</button>
+          </div>
+        </div>
+      </div>
+      <div class="content" id="competences">
+        <h2>Compétences</h2>
+        <div class="content__competences1 bot">
+          <div class="content__competences1__boite">
+            <div class="content__competences1__boite__picto">
+              <i class="fab fa-html5"></i>
+            </div>
+            <div class="content__competences1__boite__texte">HTML5</div>
+          </div>
+
+          <div class="content__competences1__boite">
+            <div class="content__competences1__boite__picto">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="content__competences1__boite__texte">CSS3</div>
+          </div>
+
+          <div class="content__competences1__boite">
+            <div class="content__competences1__boite__picto">
+              <i class="fab fa-sass"></i>
+            </div>
+            <div class="content__competences1__boite__texte">SASS</div>
+          </div>
+
+          <div class="content__competences1__boite">
+            <div class="content__competences1__boite__picto">
+              <i class="fab fa-bootstrap"></i>
+            </div>
+            <div class="content__competences1__boite__texte">Bootstrap</div>
+          </div>
+
+          <div class="content__competences1__boite">
+            <div class="content__competences1__boite__picto">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <div class="content__competences1__boite__texte">JavaScript</div>
+          </div>
+        </div>
+
+
+        <div class="content__competences1">
+          <div class="content__competences1__boite">
+            <div class="content__competences1__boite__picto">
+              <i class="fab fa-wordpress"></i>
+            </div>
+            <div class="content__competences1__boite__texte">Wordpress</div>
+          </div>
+
+          <div class="content__competences1__boite">
+            <div class="content__competences1__boite__picto">
+
+              <img src="images/mysql.svg" alt="">
+            </div>
+            <div class="content__competences1__boite__texte">MySQL</div>
+          </div>
+
+          <div class="content__competences1__boite">
+            <div class="content__competences1__boite__picto">
+              <i class="fab fa-php"></i>
+            </div>
+            <div class="content__competences1__boite__texte">PHP</div>
+          </div>
+
+          <div class="content__competences1__boite">
+            <div class="content__competences1__boite__picto">
+              <img src="images/illustrator.svg" alt="">
+            </div>
+            <div class="content__competences1__boite__texte">Illustrator</div>
+          </div>
+
+          <div class="content__competences1__boite">
+            <div class="content__competences1__boite__picto">
+              <img src="images/photoshop.svg" alt="">
+            </div>
+            <div class="content__competences1__boite__texte">Photoshop</div>
+          </div>
+        </div>
+        <h2>Outils</h2>
+        <div class="content__competences1">
+          <div class="content__competences1__boite">
+            <div class="content__competences1__boite__picto">
+              <img src="images/visual.svg" alt="">
+            </div>
+            <div class="content__competences1__boite__texte">VScode</div>
+          </div>
+
+          <div class="content__competences1__boite">
+            <div class="content__competences1__boite__picto">
+
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <div class="content__competences1__boite__texte">Git</div>
+          </div>
+
+          <div class="content__competences1__boite">
+            <div class="content__competences1__boite__picto">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="content__competences1__boite__texte">GitHub</div>
+          </div>
+
+          <div class="content__competences1__boite">
+            <div class="content__competences1__boite__picto">
+              <i class="fab fa-font-awesome"></i>
+            </div>
+            <div class="content__competences1__boite__texte">FontAwesome</div>
+          </div>
+        </div>
+      </div>
+      <div class="content" id="experience">
+        <h2>Expérience</h2>
+        <div class="formations">
+          <div class="formations__image">
+            <img src="images/pictopia.png" alt="Logo de Pictopia représentant un P blanc sur un fond rose">
+          </div>
+          <div class="formations__texte">
+            <div class="formations__texte__titre">
+              <p>Pictopia - Agence de communication</p>
+            </div>
+            <div class="formations__texte__lieu">
+              <p>Sarreguemines (2019)</p>
+            </div>
+            <div class="formations__texte__paragraphe">
+              <p>Création de maquettes de sites web, modifications et créations de sites web ainsi que des formations
+                pour des clients sur un plugin et un thème de WordPress (DIVI).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content" id="formations">
+        <h2>Formations</h2>
+        <div class="formations">
+          <div class="formations__image">
+            <img src="images/iut.jpg" alt="Photo représentant la facade de l'IUT de Haguenau">
+          </div>
+          <div class="formations__texte">
+            <div class="formations__texte__titre">
+              <p>DUT MMI (Métiers du Multimédia et de l'Internet)</p>
+            </div>
+            <div class="formations__texte__lieu">
+              <p>IUT de Haguenau (2018/2020)</p>
+            </div>
+            <div class="formations__texte__paragraphe">
+              <p>Apprentissage du <strong>web</strong>, du <strong>graphisme</strong> avec la suite adobe, audiovisuel
+                et du motion design avec la suite adobe, communication, marketing, gestion de projets, ... Réalisations
+                de maquettes et de sites web responsive, notions d’érgonomie UI/UX et d’accessibilité.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="formations top">
+          <div class="formations__image">
+            <img src="images/lycee.jpg" alt="Photo représentant la facade du lycée condorcet de Shoeneck">
+          </div>
+          <div class="formations__texte">
+            <div class="formations__texte__titre">
+              <p>Baccalauréat STI2D - option SIN</p>
+            </div>
+            <div class="formations__texte__lieu">
+              <p>Lycée condorcet, Shoeneck (2016/2018)</p>
+            </div>
+            <div class="formations__texte__paragraphe">
+              <p>Admis <strong>Mention assez bien</strong>, approche des outils et des connaissances informatiques.
+                Apprentissage des chaînes d’informations et des algorithmes simple.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content" id="realisations">
+        <h2>Réalisations</h2>
+        <div class="case-study-gallery">
+          <div class="case-study study1">
+            <div class="case-study__overlay">
+              <h3 class="case-study__title">Refonte du volley-ball club de Haguenau</h3>
+              <a target="_blank" class="case-study__link"
+                href="https://www.behance.net/gallery/92595233/Refonte-du-site-du-volley-ball-de-Haguenau">Voir le site
+                web</a>
+            </div>
+          </div>
+
+          <div class="case-study study2">
+            <div class="case-study__overlay">
+              <h3 class="case-study__title">Refonte de la chèvrerie du brabant</h3>
+              <a target="_blank" class="case-study__link" href="https://baptiste-houlle-chevre.netlify.com/">Voir le
+                site web</a>
+            </div>
+          </div>
+
+          <div class="case-study2 study3">
+            <div class="case-study__overlay">
+              <h3 class="case-study__title">Intégration web</h3>
+              <a target="_blank" class="case-study__link" href="https://baptiste-houlle-vestibulum.netlify.com/">Voir la
+                page web</a>
+            </div>
+          </div>
+
+          <div class="case-study2 study4">
+            <div class="case-study__overlay">
+              <h3 class="case-study__title">Intégration web</h3>
+              <a target="_blank" class="case-study__link" href="https://baptiste-houlle-medium.netlify.com/">Voir la
+                page web</a>
+            </div>
+          </div>
+
+          <div class="case-study2 study5">
+            <div class="case-study__overlay">
+              <h3 class="case-study__title">Concours de référencement</h3>
+              <a target="_blank" class="case-study__link" href="http://perg417z6-rwerdocko.fr/">Voir le site web</a>
+            </div>
+          </div>
+
+          <div class="case-study2 study6">
+            <div class="case-study__overlay">
+              <h3 class="case-study__title">Affiche portes ouvertes</h3>
+              <a target="_blank" class="case-study__link" href="images/affiche2.png">Voir l'affiche</a>
+            </div>
+          </div>
+          <div class="case-study2 study7">
+
+            <div class="case-study__overlay">
+              <h3 class="case-study__title">Logo La Ludette, Lutothèque de Dettwiller</h3>
+              <a target="_blank" class="case-study__link" href="images/logo2.png">Voir le logo</a>
+            </div>
+          </div>
+          <div class="case-study2 study8">
+            <div class="case-study__overlay">
+              <h3 class="case-study__title">Animation en CSS</h3>
+              <a target="_blank" class="case-study__link" href="https://baptiste-houlle-transition.netlify.com/">Voir
+                les animations</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </article>
+  </section>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="script/main.js"></script>
+</body>
+
 </html>

@@ -1,10 +1,14 @@
 @media (min-width: 1001px) {
-  
+
+.white {
+  background: rgba(0,191,255,0);
+}
+
     header {
         background: url(../images/image_header.jpg) no-repeat;
         background-size: cover;
-        height: calc(100vh - 80px);
-        align-items: center;
+        height: 100vh;
+        background-attachment: fixed;
 
         h1 {
             padding-top: 10%;
@@ -13,7 +17,7 @@
             color: white;
             font-size: 7em;
             display: flex;
-         
+
             justify-content: center;
         }
 
@@ -26,16 +30,441 @@
             justify-content: center;
 
             span {
-             color: #ff4e31;
+                color: #ff4e31;
             }
         }
+
+        /* ///////////////////////// ANIMATION ////////////////////////////// */
+
+
+        .scroll-down {
+            margin: 0 auto;
+            margin-top: 80px;
+            cursor: pointer;
+
+            display: block;
+            text-align: center;
+            font-size: 50px;
+            text-decoration: none;
+            width: 50px;
+            height: 50px;
+            border-bottom: 10px solid #fff;
+            border-right: 10px solid #fff;
+            -webkit-transform: translate(-0%, 0%) rotate(45deg);
+            -moz-transform: translate(-0%, 0%) rotate(45deg);
+            transform: translate(-0%, 0%) rotate(45deg);
+            -webkit-animation: fade_move_down 4s ease-in-out infinite;
+            -moz-animation: fade_move_down 4s ease-in-out infinite;
+            animation: fade_move_down 4s ease-in-out infinite;
+            -ms-transform: translate(-0%, 0%) rotate(45deg);
+            -o-transform: translate(-0%, 0%) rotate(45deg);
+        }
+
+
+        .scroll-down:hover {
+            border-bottom: 10px solid #ff4e31;
+            border-right: 10px solid #ff4e31;
+            transition: .5;
+            -webkit-transition: .5;
+            -moz-transition: .5;
+            -ms-transition: .5;
+            -o-transition: .5;
+        }
+
+        /*animated scroll arrow animation*/
+        @-webkit-keyframes fade_move_down {
+            0% {
+                -webkit-transform: translate(0, -10px) rotate(45deg);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                -webkit-transform: translate(0, 10px) rotate(45deg);
+                opacity: 0;
+            }
+        }
+
+        @-moz-keyframes fade_move_down {
+            0% {
+                -moz-transform: translate(0, -10px) rotate(45deg);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                -moz-transform: translate(0, 10px) rotate(45deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes fade_move_down {
+            0% {
+                transform: translate(0, -10px) rotate(45deg);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translate(0, 10px) rotate(45deg);
+                opacity: 0;
+            }
+        }
+
     }
 
     .content {
-        margin: 0 15% 0 15%;
-background: grey;
-        h2 {
+        margin: 0 10% 0 10%;
+        width: 80%;
 
+
+        h2 {
+            font-size: 2.6em;
+            margin: 70px 0 70px 0;
         }
+
+        &__presentation {
+            width: 100%;
+            display: flex;
+
+            &__illustration {
+                width: 300px;
+
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+
+            &__texte {
+                width: 70%;
+                max-width: 70%;
+                padding: 20px 0 0 30px;
+                text-align: justify;
+                font-family: "Roboto";
+                font-size: 1.3em;
+
+                p {
+                    margin-bottom: 50px;
+                    line-height: 30px;
+                }
+
+                span {
+                    font-weight: bold;
+                }
+
+                button {
+                    border: none;
+                    margin: 0 auto;
+                    padding: 6px 0 6px 0;
+                    border-radius: 8px;
+                    background: #ff4e31;
+                    font-family: "Roboto";
+                    font-weight: bold;
+                    font-size: 0.8em;
+                    color: #fff;
+                    width: 250px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        height: 30px;
+                        width: 30px;
+                        margin-right: 10px;
+
+                    }
+                }
+
+            }
+        }
+
+        .bot {
+            margin-bottom: 50px;
+        }
+
+        &__competences1 {
+            display: flex;
+            margin: auto;
+
+            justify-content: space-between;
+            width: 80%;
+
+
+
+            &__boite {
+                display: flex;
+                flex-direction: column;
+
+                &__picto {
+                    i {
+                        display: flex;
+                        font-size: 7.8em;
+                        margin-left: 20px;
+                        margin-right: 20px;
+                    }
+
+                    i:hover,
+                    img:hover {
+                        color: #ff4e31;
+                        transition: .5s;
+                        -webkit-transition: .5s;
+                        -moz-transition: .5s;
+                        -ms-transition: .5s;
+                        -o-transition: .5s;
+                    }
+                }
+
+                &__texte {
+                    font-family: "Roboto";
+                    font-size: 1.2em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+        &__competences2 {
+            display: flex;
+            width: 60%;
+            justify-content: space-between;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            font-family: "Roboto";
+            font-size: 1.4em;
+            text-align: center;
+        }
+
+
+        .top {
+            margin-top: 50px;
+        }
+
+        .formations {
+            display: flex;
+            border: 1px solid #161616;
+            border-radius: 20px;
+            width: 100%;
+
+
+            &__image {
+                display: flex;
+                width: 30%;
+                margin: 10px 0 10px 0;
+
+                img {
+                    margin: 2.5% 0 0 25%;
+                    height: 95%;
+                    width: 50%;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+            }
+
+            &__texte {
+                width: 70%;
+                font-family: "Roboto";
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px;
+
+                &__titre {
+                    font-weight: bold;
+                    font-size: 2em;
+                    color: #ff4e31;
+                    margin-bottom: 10px;
+                }
+
+                &__lieu {
+                    font-style: italic;
+                    font-size: 1em;
+                    margin-bottom: 10px;
+                }
+
+                &__paragraphe {
+                    text-align: justify;
+                    font-size: 1.2em;
+                }
+            }
+        }
+
+        /*  ////////////////////////////////// PORTFOLIO ///////////////////////////////////////////// */
+  //PORTFOLIO
+
+  .case-study-gallery{
+    margin-top:50px;
+    width: 90%;
+    margin:50px auto;
+    max-width:1100px;
+  }
+  .case-study {
+    position: relative;
+    display:block;
+    width: 100%;
+    height: 250px;
+    margin:0 auto 2rem;
+      background-size:cover;
+    border-radius:10px;
+    box-shadow:0px 25px 50px rgba(0,0,0,.5);
+    overflow:hidden;
+    transition:all .4s ease;
+    @media screen and (min-width:37.5em){
+      height: 300px;
+    }
+
+    @media screen and (min-width:45em) {
+      display:inline-block;
+        width: 46.5%;
+      margin-left: 25px;
+    }
+
+  }
+
+  .case-study2 {
+    position: relative;
+    display:block;
+    width: 100%;
+    height: 250px;
+    margin:0 auto 2rem;
+      background-size:cover;
+    border-radius:10px;
+    box-shadow:0px 25px 50px rgba(0,0,0,.5);
+    overflow:hidden;
+    transition:all .4s ease;
+    @media screen and (min-width:37.5em){
+      height: 300px;
+    }
+
+    @media screen and (min-width:45em) {
+      display:inline-block;
+        width: 30%;
+      margin-left: 25px;
+    }
+    
+  }
+  
+  
+  .case-study__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    z-index:10;
+    &:after {
+      content:'';
+      width: 100%;
+      border-radius:10px;
+      height: 100%;
+      background-color: #202020;
+      opacity:0;
+      position: absolute;
+      top:0;
+      z-index:-10;
+      left:0;
+      transition:all .3s ease;
+    }
+  }
+    
+    .case-study__title {
+      position: relative;
+      top:-200px;
+      margin-bottom:2rem;
+      margin-top:4rem;
+      font-size: 2.25rem;
+      font-family: 'roboto';
+      font-weight: bold;
+      color:white;
+      text-align: center;
+      letter-spacing: 2px;
+      transition:all .3s cubic-bezier(.3, 0, 0, 1.3);
+    }
+    
+    .case-study__link {
+      position: relative;
+      display:block;
+      width:60%;
+      top:200px;
+      padding:10px;
+      margin: 0 auto;
+      font-family: 'roboto';
+      color:#ff4e31;
+      letter-spacing:3px;
+      text-decoration: none;
+      text-align: center;
+      border:2px solid #ff4e31;
+      border-radius:3px;
+      font-size: 1.25em;
+      transition:all .3s cubic-bezier(.3, 0, 0, 1.3);
+      &:hover {
+        background-color: #ff4e31;
+        color:#FFF;
+      }
+    }
+  
+  
+  .case-study:hover, 
+  .case-study2:hover {
+    
+    .case-study__title{
+      top:0;
+    }
+    .case-study__link{
+      top:0;
+    }
+    
+    .case-study__overlay:after{
+      opacity:.75;
+    } 
+  }
+  
+  .study1{
+    background-image: url('../images/volley.jpg');
+    background-position: center;
+  }
+  .study2 {
+    background-image: url('../images/chevre.jpg');
+    background-position: center;
+  }
+  .study3{
+    background-image: url('../images/vestibulum.jpg');
+    background-position: center;
+  }
+  .study4{
+    background-image: url('../images/medium.jpg');
+    background-position: center;
+  }
+  .study5{
+    background-image: url('../images/rwerdocko.jpg');
+    background-position: center;
+  }
+  .study6{
+    background-image: url('../images/affiche.jpg');
+    background-position: center;
+  }
+
+  .study7{
+    background-image: url('../images/logo.jpg');
+    background-position: center;
+  }
+  .study8{
+    background-image: url('../images/animations.jpg');
+    background-position: center;
+  }
+
+        
     }
 }
