@@ -327,12 +327,12 @@
                     <div class="contact__content">
                         <h2 class="contact__content__titre">Contact</h2>
                         <div class="border"></div>
-                        <form class="contact-form" action="index.html" method="post">
-                            <input type="text" class="contact-form-text" placeholder="Your name and first name">
-                            <input type="email" class="contact-form-text" placeholder="Your e-mail">
-                            <input type="tel" class="contact-form-text" placeholder="Your phone number">
-                            <textarea class="contact-form-text" placeholder="Your message"></textarea>
-                            <input type="submit" class="contact-form-btn" value="Send">
+                        <form class="contact-form" action="include/reception.php" method="POST">
+                            <input type="text" name="name" class="contact-form-text" placeholder="Your name and first name">
+                            <input type="email" name="email" class="contact-form-text" placeholder="Your e-mail">
+                            <input type="tel" name="tel" class="contact-form-text" placeholder="Your phone number">
+                            <textarea class="contact-form-text" name="message" placeholder="Your message"></textarea>
+                            <input type="submit" class="contact-form-btn" name="valider" value="Send">
                         </form>
                     </div>
                 </div>

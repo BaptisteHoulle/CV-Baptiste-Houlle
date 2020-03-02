@@ -307,12 +307,12 @@
           <div class="contact__content">
             <h2 class="contact__content__titre">Contact</h2>
             <div class="border"></div>
-            <form class="contact-form" action="index.html" method="post">
-              <input type="text" class="contact-form-text" placeholder="Votre nom et prénom">
-              <input type="email" class="contact-form-text" placeholder="Votre e-mail">
-              <input type="tel" class="contact-form-text" placeholder="Votre numéro de téléphone">
-              <textarea class="contact-form-text" placeholder="Votre message"></textarea>
-              <input type="submit" class="contact-form-btn" value="Envoyer">
+            <form class="contact-form" action="include/reception.php" method="POST">
+              <input type="text" name="name" class="contact-form-text" placeholder="Votre nom et prénom">
+              <input type="email" name="email" class="contact-form-text" placeholder="Votre e-mail">
+              <input type="tel" name="tel" class="contact-form-text" placeholder="Votre numéro de téléphone">
+              <textarea class="contact-form-text" name="message" placeholder="Votre message"></textarea>
+              <input type="submit" class="contact-form-btn" name="valider" value="Envoyer">
             </form>
           </div>
         </div>
