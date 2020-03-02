@@ -16,11 +16,11 @@ window.addEventListener('scroll', () => {
 
 
 window.addEventListener('scroll', event => {
-  let navigationLinks = document.querySelectorAll('nav ul li a');
-  let fromTop = window.scrollY;
+  const navigationLinks = document.querySelectorAll('nav ul li a');
+  const fromTop = window.scrollY;
  
   navigationLinks.forEach(link => {
-    let section = document.querySelector(link.hash);
+    const section = document.querySelector(link.hash);
    
     if (
       section.offsetTop <= fromTop &&

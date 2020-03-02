@@ -7,14 +7,14 @@
     box-sizing: border-box;
 }
 
-article h2 {
+.content h2 {
     font-family: "Lato";
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
 }
 
-article h2:after {
+.content h2:after {
     content: "";
     display: block;
     background: #ff4e31;
@@ -73,11 +73,6 @@ article h2:after {
     src: url("../fonts/Raleway-Italic.ttf");
 }
 
-@font-face {
-    font-family: "Roboto";
-    font-weight: bold;
-    src: url("../fonts/Raleway-Bold.ttf");
-}
 
 
 
