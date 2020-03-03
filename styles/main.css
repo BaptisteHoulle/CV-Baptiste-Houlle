@@ -8,6 +8,18 @@
           box-sizing: border-box;
 }
 
+*::-moz-selection {
+  background-color: rgba(187, 187, 187, 0.5);
+}
+
+*::selection {
+  background-color: rgba(187, 187, 187, 0.5);
+}
+
+a {
+  cursor: pointer;
+}
+
 .content h2 {
   font-family: "Lato";
   font-weight: bold;
@@ -65,7 +77,7 @@
 
 @font-face {
   font-family: "Raleway";
-  src: url("../fonts/Ra;eway-Reg.menuar.ttf");
+  src: url("../fonts/Raleway-Regular.ttf");
 }
 
 @font-face {
@@ -80,6 +92,10 @@ nav {
   width: 100%;
   z-index: 9999999999999999999999999999999;
   position: fixed;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media (min-width: 1001px) {
@@ -418,12 +434,8 @@ nav .menu li a {
     padding: 6px 0 6px 0;
     border-radius: 8px;
     background: #ff4e31;
-    font-family: "Roboto";
-    font-weight: bold;
-    font-size: 0.8em;
-    color: #fff;
-    width: 225px;
-    height: 50px;
+    width: 250px;
+    height: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -433,11 +445,30 @@ nav .menu li a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .content__presentation__texte button a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1em;
+    color: #fff;
   }
   .content__presentation__texte button img {
-    height: 25px;
-    width: 25px;
-    margin-right: 15px;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
   }
   .content .bot {
     margin-bottom: 20px;
@@ -573,8 +604,8 @@ nav .menu li a {
     margin: 0 auto 2rem;
     background-size: cover;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
-            box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
@@ -764,23 +795,26 @@ nav .menu li a {
     margin: auto;
     padding: 0 10px;
     overflow: hidden;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
   .contact__content .contact-form-text {
     display: block;
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    font-family: 'Roboto';
+    font-size: 0.8em;
     margin: 16px 0;
     border: 0;
     background: #FFF;
     padding: 20px 20px;
     outline: none;
-    color: #FFF;
+    color: #161616;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-  }
-  .contact__content .contact-form-text:focus {
-    border: solid 1px #161616;
   }
   .contact__content ::-webkit-input-placeholder {
     color: #161616;
@@ -831,6 +865,10 @@ nav .menu li a {
     font-size: 1em;
     padding: 0 5% 0;
     height: 150px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
   footer .texte {
     display: -webkit-box;
@@ -1060,10 +1098,10 @@ nav .menu li a {
     padding: 6px 0 6px 0;
     border-radius: 8px;
     background: #ff4e31;
-    font-family: "Roboto";
-    font-weight: bold;
-    font-size: 0.8em;
-    color: #fff;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     width: 250px;
     height: 60px;
     display: -webkit-box;
@@ -1075,6 +1113,21 @@ nav .menu li a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .content__presentation__texte button a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1em;
+    color: #fff;
   }
   .content__presentation__texte button img {
     height: 30px;
@@ -1111,7 +1164,7 @@ nav .menu li a {
     margin-left: 20px;
     margin-right: 20px;
   }
-  .content__competences1__boite__picto i:hover,
+  .content__competences1__boite__picto__picto i:hover,
   .content__competences1__boite__picto img:hover {
     color: #ff4e31;
     transition: .5s;
@@ -1213,8 +1266,8 @@ nav .menu li a {
     margin: 0 auto 2rem;
     background-size: cover;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
-            box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
@@ -1404,9 +1457,15 @@ nav .menu li a {
     margin: auto;
     padding: 0 10px;
     overflow: hidden;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
   .contact__content .contact-form-text {
     display: block;
+    font-family: 'Roboto';
+    font-size: 1em;
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1415,12 +1474,9 @@ nav .menu li a {
     background: #FFF;
     padding: 20px 20px;
     outline: none;
-    color: #FFF;
+    color: #161616;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-  }
-  .contact__content .contact-form-text:focus {
-    border: solid 1px #161616;
   }
   .contact__content ::-webkit-input-placeholder {
     color: #161616;
@@ -1460,6 +1516,10 @@ nav .menu li a {
     color: #FFF;
   }
   footer {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1668,6 +1728,7 @@ nav .menu li a {
     text-align: justify;
     font-family: "Roboto";
     font-size: 1.3em;
+    margin: 0 auto;
   }
   .content__presentation__texte p {
     margin-bottom: 50px;
@@ -1682,10 +1743,10 @@ nav .menu li a {
     padding: 6px 0 6px 0;
     border-radius: 8px;
     background: #ff4e31;
-    font-family: "Roboto";
-    font-weight: bold;
-    font-size: 0.8em;
-    color: #fff;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     width: 250px;
     height: 60px;
     display: -webkit-box;
@@ -1697,6 +1758,21 @@ nav .menu li a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .content__presentation__texte button a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1em;
+    color: #fff;
   }
   .content__presentation__texte button img {
     height: 30px;
@@ -1714,7 +1790,7 @@ nav .menu li a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 100%;
+    width: 60%;
   }
   .content__competences1__boite {
     display: -webkit-box;
@@ -1729,8 +1805,7 @@ nav .menu li a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 7.8em;
-    margin-right: 20px;
+    font-size: 7em;
   }
   .content__competences1__boite__picto i:hover,
   .content__competences1__boite__picto img:hover {
@@ -1825,8 +1900,8 @@ nav .menu li a {
     margin: 0 auto 2rem;
     background-size: cover;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
-            box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
@@ -1856,8 +1931,8 @@ nav .menu li a {
     margin: 0 auto 2rem;
     background-size: cover;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
-            box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
@@ -1992,7 +2067,7 @@ nav .menu li a {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.4em;
     color: #FFF;
     padding: 0px 0 50px 0;
   }
@@ -2011,6 +2086,10 @@ nav .menu li a {
     margin-top: 10px;
   }
   .contact__content .contact-form {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     max-width: 60%;
     margin: auto;
     padding: 0 10px;
@@ -2018,20 +2097,22 @@ nav .menu li a {
   }
   .contact__content .contact-form-text {
     display: block;
+    font-family: 'Roboto';
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin: 16px 0;
     border: 0;
+    font-size: 1em;
     background: #FFF;
     padding: 20px 20px;
     outline: none;
-    color: #FFF;
-    -webkit-transition: 0.5s;
+    color: #161616;
     transition: 0.5s;
-  }
-  .contact__content .contact-form-text:focus {
-    border: solid 1px #161616;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
   }
   .contact__content ::-webkit-input-placeholder {
     color: #161616;
@@ -2071,6 +2152,10 @@ nav .menu li a {
     color: #FFF;
   }
   footer {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -2,21 +2,34 @@
   font-family: "Roboto";
   src: url("../fonts/Roboto-Reg.menuar.ttf");
 }
-
 @font-face {
   font-family: "Roboto";
   font-weight: bold;
   src: url("../fonts/Roboto-Bold.ttf");
 }
-
 @font-face {
   font-family: "Lato";
   src: url("../fonts/Lato-Medium.ttf");
 }
-
 @font-face {
   font-family: "Raleway";
-  src: url("../fonts/Ra;eway-Reg.menuar.ttf");
+  src: url("../fonts/Raleway-Regular.ttf");
+}
+p:last-child {
+  margin-bottom: 50px;
+}
+
+footer i {
+  color: #FFF;
+}
+
+footer i:hover {
+  color: #ff4e31;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 body {
@@ -24,14 +37,14 @@ body {
 }
 
 h1 {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 4em;
   color: #ff4e31;
   text-align: center;
 }
 
 p {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 1em;
   width: 80%;
   margin: 0 auto;
@@ -69,7 +82,7 @@ p {
         -ms-flex-pack: justify;
             justify-content: space-between;
     background: #161616;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 1em;
     padding: 0 5% 0;
     height: 150px;
@@ -105,7 +118,6 @@ p {
   }
   footer .logo img {
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
         align-self: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -136,15 +148,14 @@ p {
     margin-left: 30px;
   }
   footer .reseaux a i:hover {
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
     color: #ff4e31;
   }
 }
-
 @media (max-width: 768px) {
   footer {
     display: -webkit-box;
@@ -154,7 +165,7 @@ p {
         -ms-flex-pack: justify;
             justify-content: space-between;
     background: #161616;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 1em;
     padding: 0 5% 0;
     height: 150px;
@@ -192,7 +203,6 @@ p {
   }
   footer .logo img {
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
         align-self: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -223,15 +233,14 @@ p {
     margin-left: 20px;
   }
   footer .reseaux a i:hover {
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
     color: #ff4e31;
   }
 }
-
 @media (min-width: 769px) and (max-width: 1000px) {
   footer {
     display: -webkit-box;
@@ -241,7 +250,7 @@ p {
         -ms-flex-pack: justify;
             justify-content: space-between;
     background: #161616;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 1em;
     padding: 0 5% 0;
     height: 150px;
@@ -277,7 +286,6 @@ p {
   }
   footer .logo img {
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
         align-self: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -308,10 +316,15 @@ p {
     margin-left: 30px;
   }
   footer .reseaux a i:hover {
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    color: #ff4e31;
+  }
+}
+/*# sourceMappingURL=mention.css.map */.5s;
     -o-transition: .5s;
     color: #ff4e31;
   }

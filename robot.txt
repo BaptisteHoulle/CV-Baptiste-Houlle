@@ -1,0 +1,2 @@
+User-argent: *
+Sitemap: http://baptiste-houlle.fr/sitemap.xml

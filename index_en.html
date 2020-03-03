@@ -2,7 +2,19 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159548925-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159548925-1');
+</script>
+
     <title>Portfolio - Baptiste Houllé</title>
+    <meta name="description" content="Baptiste Houllé, 19 years old, passionate about
+    web and graphics design for a few years. Now studying web and graphics in France">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -14,6 +26,39 @@
 </head>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="script/jquery.parallax-1.1.js"></script>
+<script type="text/javascript" src="/tarteaucitron/tarteaucitron.js"></script>
+
+<script type="text/javascript">
+tarteaucitron.init({
+  "privacyUrl": "", /* Privacy policy url */
+
+  "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+  "cookieName": "tarteaucitron", /* Cookie name */
+
+  "orientation": "middle", /* Banner position (top - bottom) */
+  "showAlertSmall": true, /* Show the small banner on bottom right */
+  "cookieslist": true, /* Show the cookie list */
+
+  "adblocker": false, /* Show a Warning if an adblocker is detected */
+  "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+  "highPrivacy": true, /* Disable auto consent */
+  "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+
+  "removeCredit": false, /* Remove credit link */
+  "moreInfoLink": true, /* Show more info link */
+  "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+
+  //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
+                  
+  "readmoreLink": "/cookiespolicy" /* Change the default readmore link */
+});
+</script>
+
+<script type="text/javascript">
+    tarteaucitron.user.gtagUa = 'UA-159548925-1';
+    tarteaucitron.user.gtagMore = function () { /* add here your optionnal gtag() */ };
+    (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+    </script>
 </head>
 
 <body>
@@ -56,7 +101,7 @@
                         <div class="content__presentation__illustration"><img src="images/Illustration.png"
                                 alt="Portrait about me in flat design"></div>
                         <div class="content__presentation__texte">
-                            <p>I am <strong>Baptiste Houllé</strong>, I'm<span>19 years old</span> and I am
+                            <p>I am <strong>Baptiste Houllé</strong>, I'm<span> 19 years old</span> and I am
                                 passionate about the
                                 web
                                 and graphics for a few years! I am currently studying web and graphic design in France.
@@ -66,7 +111,7 @@
                                 intended for use in
                                 studies
                                 to become a <strong>Webdesigner</strong>.</p>
-                            <button><img src="images/download.svg" alt=""> Download my resume</button>
+                                <button><a href="images/CV_v3.jpg" download="images/CV_v3.jpg"><img src="images/download.svg" alt=""> Download my resume</a></button>
                         </div>
                     </div>
                 </div>

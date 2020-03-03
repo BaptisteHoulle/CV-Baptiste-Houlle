@@ -150,6 +150,7 @@
         text-align: justify;
         font-family: "Roboto";
         font-size: 1.3em;
+        margin: 0 auto;
 
         p {
           margin-bottom: 50px;
@@ -166,15 +167,22 @@
           padding: 6px 0 6px 0;
           border-radius: 8px;
           background: #ff4e31;
-          font-family: "Roboto";
-          font-weight: bold;
-          font-size: 0.8em;
-          color: #fff;
+          user-select: none;
           width: 250px;
           height: 60px;
           display: flex;
           align-items: center;
           justify-content: center;
+
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Roboto";
+            font-weight: bold;
+            font-size: 1em;
+            color: #fff;
+          }
 
           img {
             height: 30px;
@@ -194,11 +202,8 @@
     &__competences1 {
       display: flex;
       margin: auto;
-
       justify-content: space-between;
-      width: 100%;
-
-
+      width: 60%;
 
       &__boite {
         display: flex;
@@ -207,9 +212,7 @@
         &__picto {
           i {
             display: flex;
-            font-size: 7.8em;
-
-            margin-right: 20px;
+            font-size: 7em;
           }
 
           i:hover,
@@ -309,7 +312,7 @@
       margin: 0 auto 2rem;
       background-size: cover;
       border-radius: 10px;
-      box-shadow: 0px 25px 50px rgba(0, 0, 0, .5);
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, .5);
       overflow: hidden;
       transition: all .4s ease;
 
@@ -333,7 +336,7 @@
       margin: 0 auto 2rem;
       background-size: cover;
       border-radius: 10px;
-      box-shadow: 0px 25px 50px rgba(0, 0, 0, .5);
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, .5);
       overflow: hidden;
       transition: all .4s ease;
 
@@ -479,7 +482,7 @@
         font-weight: bold;
         text-transform: uppercase;
         text-align: center;
-        font-size: 2em;
+        font-size: 2.4em;
         color: #FFF;
         padding: 0px 0 50px 0;
       }
@@ -500,6 +503,7 @@
       }
 
       .contact-form {
+        user-select: none;
         max-width: 60%;
         margin: auto;
         padding: 0 10px;
@@ -509,19 +513,21 @@
 
       .contact-form-text {
         display: block;
+        font-family: 'Roboto';
         width: 100%;
         box-sizing: border-box;
         margin: 16px 0;
         border: 0;
+        font-size: 1em;
         background: #FFF;
         padding: 20px 20px;
         outline: none;
-        color: #FFF;
+        color: #161616;
         transition: 0.5s;
-      }
-
-      .contact-form-text:focus {
-        border: solid 1px #161616;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
       }
 
       ::placeholder {
@@ -555,6 +561,7 @@
   }
 
   footer {
+    user-select: none;
     display: flex;
     justify-content: space-between;
     background: #161616;
@@ -562,7 +569,6 @@
     font-size: 1em;
     padding: 0 5% 0;
     height: 150px;
-
 
     .texte {
       display: flex;

@@ -18,7 +18,24 @@
 
 @font-face {
     font-family: "Raleway";
-    src: url("../fonts/Ra;eway-Reg.menuar.ttf");
+    src: url("../fonts/Raleway-Regular.ttf");
+}
+
+p:last-child {
+    margin-bottom: 50px;
+}
+
+footer i {
+    color: #FFF;
+}
+
+footer i:hover {
+    color: #ff4e31;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 body {
