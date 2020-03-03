@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+h1, h2 {
+    text-align: center;
+}
+
+
 *::selection {
     background-color: rgba($color: rgb(187, 187, 187), $alpha: 0.5);
   }
