@@ -1,9 +1,5 @@
 @media (min-width: 1001px) {
 
-  .white {
-    background: rgba(0, 191, 255, 0);
-  }
-
   header {
     background: url(../images/image_header.jpg) no-repeat;
     background-size: cover;
@@ -163,6 +159,8 @@
 
         button {
           border: none;
+          color: white;
+          font-size: 0.8em;
           margin: 0 auto;
           padding: 6px 0 6px 0;
           border-radius: 8px;
@@ -174,24 +172,12 @@
           align-items: center;
           justify-content: center;
 
-          a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: "Roboto";
-            font-weight: bold;
-            font-size: 1em;
-            color: #fff;
-          }
-
           img {
             height: 30px;
             width: 30px;
             margin-right: 10px;
-
           }
         }
-
       }
     }
 
@@ -290,6 +276,15 @@
         &__paragraphe {
           text-align: justify;
           font-size: 1.2em;
+
+          a {
+            text-decoration: none;
+            color: #ff4e31;
+          }
+
+          a:hover {
+            color: #E30913;
+          }
         }
       }
     }
@@ -381,12 +376,16 @@
       margin-bottom: 2rem;
       margin-top: 4rem;
       font-size: 2.25rem;
-      font-family: 'roboto';
+      font-family: "Roboto";
       font-weight: bold;
       color: white;
       text-align: center;
       letter-spacing: 2px;
       transition: all .3s cubic-bezier(.3, 0, 0, 1.3);
+      -webkit-transition: all .3s cubic-bezier(.3, 0, 0, 1.3);
+      -moz-transition: all .3s cubic-bezier(.3, 0, 0, 1.3);
+      -ms-transition: all .3s cubic-bezier(.3, 0, 0, 1.3);
+      -o-transition: all .3s cubic-bezier(.3, 0, 0, 1.3);
     }
 
     .case-study__link {
@@ -396,7 +395,7 @@
       top: 200px;
       padding: 10px;
       margin: 0 auto;
-      font-family: 'roboto';
+      font-family: "Roboto";
       color: #ff4e31;
       letter-spacing: 3px;
       text-decoration: none;
@@ -411,7 +410,6 @@
         color: #FFF;
       }
     }
-
 
     .case-study:hover,
     .case-study2:hover {
@@ -611,6 +609,8 @@
 
         i {
           margin-left: 30px;
+          width: 100%;
+          color: white !important;
         }
 
         i:hover {

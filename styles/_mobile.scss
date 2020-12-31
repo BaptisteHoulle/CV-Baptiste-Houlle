@@ -10,15 +10,15 @@
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
+    align-items: center;
 
     h1 {
-      padding-top: 40%;
+padding-top: 40vh;
       font-family: "Raleway";
       font-weight: bold;
       color: white;
-      font-size: 3.2em;
+      font-size: 3.6em;
       display: flex;
-
       justify-content: center;
     }
 
@@ -173,7 +173,8 @@
           padding: 6px 0 6px 0;
           border-radius: 8px;
           background: #ff4e31;
-
+          color: white;
+          font-size: 1em;
           width: 250px;
           height: 60px;
           display: flex;
@@ -195,10 +196,8 @@
             height: 30px;
             width: 30px;
             margin-right: 10px;
-
           }
         }
-
       }
     }
 
@@ -260,6 +259,10 @@
       border-radius: 20px;
       width: 100%;
 
+      a {
+        color: #ff4e31;
+      }
+
       &__image {
         justify-content: center;
         padding-top: 10px;
@@ -275,12 +278,16 @@
           -moz-border-radius: 50%;
           -ms-border-radius: 50%;
           -o-border-radius: 50%;
-
         }
 
         .picto {
-          width: 200px;
+          width: 150px;
           height: 150px !important;
+        }
+
+        .pictopiaa {
+          width: 2000px;
+          height: auto !important;
         }
       }
 
@@ -521,7 +528,7 @@
       }
 
       .contact-form {
-        max-width: 60%;
+        max-width: 70%;
         margin: auto;
         padding: 0 10px;
         overflow: hidden;
@@ -590,7 +597,7 @@
       align-items: center;
       justify-content: center;
       font-size: 1em;
-      width: 100%;
+      width: 60%;
 
       a {
         text-decoration: none;
@@ -603,7 +610,7 @@
       align-self: center;
       justify-content: center;
       margin-right: 50px;
-      width: 50px;
+      width: 10%;
       height: 50px;
 
       img {
@@ -616,6 +623,8 @@
 
     .reseaux {
       display: flex;
+      width: 20%;
+      margin-right: 5%;
 
       a {
         display: flex;
@@ -627,6 +636,7 @@
 
         i {
           margin-left: 20px;
+          color: white;
         }
 
         i:hover {

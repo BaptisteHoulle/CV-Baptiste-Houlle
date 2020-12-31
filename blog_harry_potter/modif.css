@@ -1,0 +1,41 @@
+.utilise {
+    text-align: center;
+    border: 3px solid #FF4E31;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    width: 20%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1rem;
+    margin: 0 40% 5% 40%;
+    font-family: cursive;
+}
+
+.reussie {
+    text-align: center;
+    border: 3px solid #179722;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    width: 20%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1rem;
+    margin: 0 40% 5% 40%;
+    font-family: cursive;
+}
+
+@media (max-width: 1000px) {
+
+
+    .reussie, .utilise, .grand {
+        width: 50%;
+        font-size: 0.8rem;
+        margin: 0 25% 5% 25%;
+    }
+}

@@ -3,12 +3,13 @@
   margin: 0;
   text-decoration: none;
   list-style: none;
-  scroll-behavior: smooth;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-h1, h2 {
+h1,
+h2 {
   text-align: center;
 }
 
@@ -47,7 +48,7 @@ a {
 
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Reg.menuar.ttf");
+  src: url("../fonts/Roboto-Medium.ttf");
 }
 
 @font-face {
@@ -90,8 +91,13 @@ a {
   src: url("../fonts/Raleway-Italic.ttf");
 }
 
-nav {
+.white {
   background: #161616;
+  z-index: 99999999999999999999999999999999;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0);
   height: 80px;
   width: 100%;
   z-index: 9999999999999999999999999999999;
@@ -283,6 +289,10 @@ nav .menu li a {
   }
 }
 
+footer .fab {
+  color: white;
+}
+
 @media (max-width: 768px) {
   body {
     width: 100%;
@@ -293,15 +303,18 @@ nav .menu li a {
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     /* ///////////////////////// ANIMATION ////////////////////////////// */
     /*animated scroll arrow animation*/
   }
   header h1 {
-    padding-top: 40%;
+    padding-top: 40vh;
     font-family: "Raleway";
     font-weight: bold;
     color: white;
-    font-size: 3.2em;
+    font-size: 3.6em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -438,6 +451,8 @@ nav .menu li a {
     padding: 6px 0 6px 0;
     border-radius: 8px;
     background: #ff4e31;
+    color: white;
+    font-size: 1em;
     width: 250px;
     height: 60px;
     display: -webkit-box;
@@ -543,6 +558,9 @@ nav .menu li a {
     border-radius: 20px;
     width: 100%;
   }
+  .content .formations a {
+    color: #ff4e31;
+  }
   .content .formations__image {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -564,8 +582,12 @@ nav .menu li a {
     -o-border-radius: 50%;
   }
   .content .formations__image .picto {
-    width: 200px;
+    width: 150px;
     height: 150px !important;
+  }
+  .content .formations__image .pictopiaa {
+    width: 2000px;
+    height: auto !important;
   }
   .content .formations__texte {
     width: 80%;
@@ -795,7 +817,7 @@ nav .menu li a {
     margin-top: 10px;
   }
   .contact__content .contact-form {
-    max-width: 60%;
+    max-width: 70%;
     margin: auto;
     padding: 0 10px;
     overflow: hidden;
@@ -886,7 +908,7 @@ nav .menu li a {
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 1em;
-    width: 100%;
+    width: 60%;
   }
   footer .texte a {
     text-decoration: none;
@@ -902,7 +924,7 @@ nav .menu li a {
         -ms-flex-pack: center;
             justify-content: center;
     margin-right: 50px;
-    width: 50px;
+    width: 10%;
     height: 50px;
   }
   footer .logo img {
@@ -919,6 +941,8 @@ nav .menu li a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 20%;
+    margin-right: 5%;
   }
   footer .reseaux a {
     display: -webkit-box;
@@ -936,6 +960,7 @@ nav .menu li a {
   }
   footer .reseaux a i {
     margin-left: 20px;
+    color: white;
   }
   footer .reseaux a i:hover {
     transition: .5s;
@@ -961,11 +986,11 @@ nav .menu li a {
     /*animated scroll arrow animation*/
   }
   header h1 {
-    padding-top: 20%;
+    padding-top: 30vh;
     font-family: "Raleway";
     font-weight: bold;
     color: white;
-    font-size: 6em;
+    font-size: 5em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1106,6 +1131,8 @@ nav .menu li a {
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+    color: white;
+    font-size: 1em;
     width: 250px;
     height: 60px;
     display: -webkit-box;
@@ -1205,6 +1232,9 @@ nav .menu li a {
     border-radius: 20px;
     width: 100%;
   }
+  .content .formations a {
+    color: #ff4e31;
+  }
   .content .formations__image {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1227,7 +1257,7 @@ nav .menu li a {
   }
   .content .formations__image .picto {
     width: 100% !important;
-    height: 90% !important;
+    height: 100% !important;
   }
   .content .formations__texte {
     width: 80%;
@@ -1596,6 +1626,7 @@ nav .menu li a {
   }
   footer .reseaux a i {
     margin-left: 30px;
+    color: white;
   }
   footer .reseaux a i:hover {
     transition: .5s;
@@ -1608,9 +1639,6 @@ nav .menu li a {
 }
 
 @media (min-width: 1001px) {
-  .white {
-    background: rgba(0, 191, 255, 0);
-  }
   header {
     background: url(../images/image_header.jpg) no-repeat;
     background-size: cover;
@@ -1743,6 +1771,8 @@ nav .menu li a {
   }
   .content__presentation__texte button {
     border: none;
+    color: white;
+    font-size: 0.8em;
     margin: 0 auto;
     padding: 6px 0 6px 0;
     border-radius: 8px;
@@ -1762,21 +1792,6 @@ nav .menu li a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .content__presentation__texte button a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-family: "Roboto";
-    font-weight: bold;
-    font-size: 1em;
-    color: #fff;
   }
   .content__presentation__texte button img {
     height: 30px;
@@ -1890,6 +1905,13 @@ nav .menu li a {
     text-align: justify;
     font-size: 1.2em;
   }
+  .content .formations__texte__paragraphe a {
+    text-decoration: none;
+    color: #ff4e31;
+  }
+  .content .formations__texte__paragraphe a:hover {
+    color: #E30913;
+  }
   .content .case-study-gallery {
     margin-top: 50px;
     width: 90%;
@@ -1985,13 +2007,16 @@ nav .menu li a {
     margin-bottom: 2rem;
     margin-top: 4rem;
     font-size: 2.25rem;
-    font-family: 'roboto';
+    font-family: "Roboto";
     font-weight: bold;
     color: white;
     text-align: center;
     letter-spacing: 2px;
-    -webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
     transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+    -webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+    -moz-transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+    -ms-transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+    -o-transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
   }
   .content .case-study__link {
     position: relative;
@@ -2000,7 +2025,7 @@ nav .menu li a {
     top: 200px;
     padding: 10px;
     margin: 0 auto;
-    font-family: 'roboto';
+    font-family: "Roboto";
     color: #ff4e31;
     letter-spacing: 3px;
     text-decoration: none;
@@ -2232,6 +2257,8 @@ nav .menu li a {
   }
   footer .reseaux a i {
     margin-left: 30px;
+    width: 100%;
+    color: white !important;
   }
   footer .reseaux a i:hover {
     transition: .5s;
@@ -2239,80 +2266,6 @@ nav .menu li a {
     -moz-transition: .5s;
     -ms-transition: .5s;
     -o-transition: .5s;
-    color: #ff4e31;
-  }
-}
-/*# sourceMappingURL=main.css.map */"Roboto";
-    font-size: 1em;
-    padding: 0 5% 0;
-    height: 150px;
-  }
-  footer .texte {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    color: #FFF;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 1.2em;
-  }
-  footer .texte a {
-    text-decoration: none;
-    color: #ff4e31;
-  }
-  footer .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 80px;
-    height: 80px;
-  }
-  footer .logo img {
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100px;
-    height: 80px;
-  }
-  footer .reseaux {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  footer .reseaux a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-decoration: none;
-    color: #FFF;
-    font-size: 2.4em;
-  }
-  footer .reseaux a i {
-    margin-left: 30px;
-  }
-  footer .reseaux a i:hover {
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
     color: #ff4e31;
   }
 }

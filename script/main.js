@@ -1,11 +1,15 @@
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
 
+  const navbar = document.querySelector('nav');
+
+  if (window.scrollY < 50) {
+console.log('yes');
     navbar.classList.remove('white');
-  } else if (window.scrollY < 80) {
+  } else if (window.scrollY > 80) {
     navbar.classList.add('white');
   }
 });
+
 
 const navigationLinks = document.querySelectorAll('.menu a');
 const sections = [...navigationLinks].map(
@@ -41,7 +45,6 @@ if (sections.length > 0) {
     })
   }
 
-
   /**
    * Add .active class to the navbar anchor
    *
@@ -61,3 +64,4 @@ if (sections.length > 0) {
     navLink.classList.add('active');
   }
 }
+

@@ -12,13 +12,12 @@
     background-attachment: fixed;
 
     h1 {
-      padding-top: 20%;
+      padding-top: 30vh;
       font-family: "Raleway";
       font-weight: bold;
       color: white;
-      font-size: 6em;
+      font-size: 5em;
       display: flex;
-
       justify-content: center;
     }
 
@@ -174,6 +173,8 @@
           border-radius: 8px;
           background: #ff4e31;
           user-select: none;
+          color: white;
+          font-size: 1em;
           width: 250px;
           height: 60px;
           display: flex;
@@ -256,6 +257,10 @@
       border-radius: 20px;
       width: 100%;
 
+      a {
+        color: #ff4e31;
+      }
+
       &__image {
         justify-content: center;
         padding-top: 10px;
@@ -275,7 +280,7 @@
 
         .picto {
           width: 100% !important;
-          height: 90% !important;
+          height: 100% !important;
         }
       }
 
@@ -621,6 +626,7 @@
 
         i {
           margin-left: 30px;
+          color: white;
         }
 
         i:hover {

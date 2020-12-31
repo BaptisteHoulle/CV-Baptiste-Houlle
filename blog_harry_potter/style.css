@@ -1,0 +1,449 @@
+@font-face {
+  font-family: "harry";
+  font-weight: normal;
+  src: url("fonts/HARRYP__.TTF");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 100% !important;
+}
+
+body header {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background-image: url("images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+body header h1 {
+  color: white;
+  position: absolute;
+  font-family: cursive;
+  top: 35%;
+  left: 35%;
+  font-size: 12rem;
+  text-shadow: 5px 5px 5px black;
+  font-family: "harry";
+}
+
+body header nav {
+  background: #161616;
+  height: 100px;
+  width: 100vw;
+  position: fixed;
+  z-index: 11111111111111111111111111111111111;
+}
+
+@media (min-width: 1001px) {
+  body header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 20px;
+    width: 100%;
+  }
+  body header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+body header nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+body header nav .logo img {
+  margin: 10px 0 0 20px;
+  width: 80px;
+  height: 56px;
+}
+
+body header nav ul li a {
+  font-family: "Lato";
+  font-weight: bold;
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+body header nav ul li a i {
+  padding-right: 10px;
+}
+
+body header a.active,
+body header a:hover {
+  background: #FF4E31;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body header .checkbtn {
+  font-size: 30px;
+  color: white;
+  text-align: right;
+  line-height: 100px;
+  padding-right: 10%;
+  cursor: pointer;
+  display: none;
+}
+
+body header #check {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  body header nav {
+    width: 100% !important;
+  }
+  body header .checkbtn {
+    display: block;
+  }
+  body header ul {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    top: 100px;
+    left: -100vw;
+    text-align: center;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  body header nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  body header a:hover,
+  body header a.active {
+    background: none;
+    color: #FF4E31;
+  }
+  body header #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+body h2 {
+  margin-top: 2%;
+  color: black;
+  font-size: 3em;
+  text-align: center;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  font-family: cursive;
+}
+
+body h2 i {
+  padding-right: 20px;
+}
+
+body h2:hover {
+  color: #FF4E31;
+}
+
+body h2:after {
+  display: block;
+  content: '';
+  height: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  width: 15%;
+  margin: 0 auto;
+  background-color: #FF4E31;
+  margin: 1% 42.5% 5% 42.5%;
+}
+
+body .svg-wrapper {
+  height: 60px;
+  margin: 5% 40% 2% 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 25%;
+}
+
+body .shape {
+  fill: transparent;
+  stroke-dasharray: 140 500;
+  stroke-dashoffset: -425;
+  stroke-width: 8px;
+  stroke: #FF4E31;
+}
+
+body .text {
+  color: #000;
+  font-family: 'Roboto Condensed';
+  font-size: 1em;
+  letter-spacing: 6px;
+  line-height: 32px;
+  position: relative;
+  text-align: center;
+  top: -48px;
+  width: 100%;
+  margin-left: 80%;
+  padding-right: 4%;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+body .svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+body .admin {
+  text-align: center;
+  margin-bottom: 4%;
+  font-size: 1.4em;
+  font-family: cursive;
+}
+
+body .admin span {
+  color: #FF4E31;
+}
+
+body .activer {
+  text-align: center;
+  margin-bottom: 4%;
+  font-size: 1.4em;
+  font-family: cursive;
+}
+
+.cont {
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  padding: 2% 0 0 0;
+  background: #000;
+  font-size: 1.1em;
+}
+
+.cont i {
+  padding-top: 2%;
+  float: left;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.cont i:hover {
+  color: #FF4E31;
+}
+
+.cont th {
+  color: #FF4E31;
+  font-size: 1.6rem;
+  padding: 0 5%;
+  width: 15%;
+  text-align: center;
+}
+
+.cont tr,
+.cont td {
+  color: white;
+  font-family: cursive;
+  height: 70px;
+  width: 15%;
+  padding: 0 5%;
+}
+
+.cont tr .imgtable img,
+.cont td .imgtable img {
+  padding-top: 20px;
+}
+
+.cont td a {
+  color: white;
+  font-family: cursive;
+  text-decoration: underline;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.cont td a:hover {
+  color: #FF4E31;
+}
+
+@media (max-width: 1000px) {
+  body header {
+    width: 100%;
+    max-width: 100%;
+    background-image: url("images/header.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  body header h1 {
+    color: white;
+    position: absolute;
+    font-family: cursive;
+    top: 40%;
+    left: 20%;
+    width: 80%;
+    height: 22.5%;
+    font-size: 8rem;
+    text-shadow: 5px 5px 5px black;
+    font-family: "harry";
+  }
+  body h2 {
+    margin-top: 5%;
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    font-family: cursive;
+  }
+  body h2 i {
+    padding-right: 10px;
+  }
+  body h2:hover {
+    color: #FF4E31;
+  }
+  body h2:after {
+    display: block;
+    content: '';
+    height: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 15%;
+    margin: 0 auto;
+    background-color: #FF4E31;
+    margin: 1% 42.5% 5% 42.5%;
+  }
+  body .shape {
+    display: none;
+  }
+  body .text {
+    color: #000;
+    font-family: 'Roboto Condensed';
+    font-size: 1em;
+    letter-spacing: 6px;
+    line-height: 32px;
+    position: relative;
+    text-align: center;
+    top: -48px;
+    border: 1px solid #FF4E31;
+    width: 50%;
+    margin: 0 auto;
+  }
+  body .cont {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    padding: 2% 0 0 0;
+    background: #000;
+    font-size: 0.8em;
+  }
+  body .cont i {
+    padding-top: 2%;
+    float: left;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+  body .cont i:hover {
+    color: #FF4E31;
+  }
+  body .cont th {
+    color: #FF4E31;
+    font-size: 1rem;
+    padding: 0 2.5%;
+    width: 20%;
+    text-align: center;
+  }
+  body .cont tr,
+  body .cont td {
+    color: white;
+    font-family: cursive;
+    height: 50px;
+    width: 20%;
+    padding: 0 2.5%;
+  }
+  body .cont tr .imgtable img,
+  body .cont td .imgtable img {
+    padding-top: 10px;
+  }
+  body .cont td a {
+    color: white;
+    font-family: cursive;
+    text-decoration: underline;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+  body .cont td a:hover {
+    color: #FF4E31;
+  }
+}
+
+.titlea {
+  margin: 20px 0;
+}
+/*# sourceMappingURL=style.css.map */
